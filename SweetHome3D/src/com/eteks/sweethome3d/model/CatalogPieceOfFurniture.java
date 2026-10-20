@@ -680,6 +680,14 @@ public class CatalogPieceOfFurniture implements Comparable<CatalogPieceOfFurnitu
   }
 
   /**
+   * Returns the volume of the furniture
+   */
+  public float getVolume(){
+    return this.depth * this.width * this.height;
+  }
+
+
+  /**
    * Returns the shape used to cut out upper levels when they intersect with the piece   
    * like a staircase.
    * @since 3.4
@@ -776,6 +784,7 @@ public class CatalogPieceOfFurniture implements Comparable<CatalogPieceOfFurnitu
   public String getCurrency() {
     return this.currency;
   }
+
 
   /**
    * Returns the category of this piece of furniture.

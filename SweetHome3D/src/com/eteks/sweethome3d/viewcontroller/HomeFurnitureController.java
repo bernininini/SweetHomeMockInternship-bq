@@ -591,7 +591,7 @@ public class HomeFurnitureController implements Controller {
    * Returns <code>true</code> if the given <code>property</code> is editable.
    * Depending on whether a property is editable or not, the view associated to this controller
    * may render it differently.
-   * The implementation of this method always returns <code>true</code> except for <code>DESCRIPTION</code> and <code>PRICE</code> properties. 
+   * The implementation of this method always returns <code>true</code> except for  <code>PRICE</code> properties.
    */
   public boolean isPropertyEditable(Property property) {
     switch (property) {
@@ -1444,6 +1444,7 @@ public class HomeFurnitureController implements Controller {
     private final float                width;
     private final float                depth;
     private final float                height;
+    private final float                volume;
     private final Integer              color;
     private final HomeTexture          texture;
     private final HomeMaterial []      modelMaterials;
@@ -1465,6 +1466,7 @@ public class HomeFurnitureController implements Controller {
       this.width = piece.getWidth();
       this.depth = piece.getDepth();
       this.height = piece.getHeight();
+      this.volume = piece.getVolume();
       this.color = piece.getColor();
       this.texture = piece.getTexture();
       this.modelMaterials = piece.getModelMaterials();
