@@ -328,6 +328,7 @@ public class HomePieceOfFurniture extends HomeObject implements PieceOfFurniture
       this.texture = homePiece.getTexture();
       this.shininess = homePiece.getShininess();
       this.modelMaterials = homePiece.getModelMaterials();
+
     } else {
       if (piece instanceof CatalogPieceOfFurniture) {
         this.catalogId = ((CatalogPieceOfFurniture)piece).getId();
